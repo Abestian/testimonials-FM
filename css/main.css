@@ -1,1 +1,35 @@
-/*# sourceMappingURL=main.css.map */
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.semantic-invisible {
+  font-size: 0;
+}
+
+.testimonials {
+  display: grid;
+  margin: 5em 2em;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+}
+.author__credentials {
+  display: flex;
+  flex-direction: column;
+}/*# sourceMappingURL=main.css.map */
