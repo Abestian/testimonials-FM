@@ -19,6 +19,11 @@ body {
 	font-family: 'Barlow Semi Condensed', sans-serif;
 	font-size: 1.3rem;
 	font-weight: 500;
+	background-color: $lightGrayishBlue;
+}
+
+h2 {
+	font-weight: 600;
 }
 
 .semantic-invisible {
@@ -27,14 +32,93 @@ body {
 
 .testimonials {
 	display: grid;
+	justify-content: center;
 	margin: 5em 2em;
+	gap: 2em;
 }
 
-.author {
+.card {
 	display: flex;
-	align-items: center;
-	&__credentials {
+	flex-direction: column;
+	gap: 1.5em;
+	padding: 2em;
+	max-width: 350px;
+	border-radius: 8px;
+
+	.author {
 		display: flex;
-		flex-direction: column;
+		justify-content: flex-start;
+		align-items: center;
+		gap: 1em;
+
+		&__image {
+			img {
+				width: 3.2rem;
+				border: 2px solid $lightGray;
+				border-radius: 50%;
+			}
+		}
+
+		&__image--fourth {
+			img {
+				border: 2px solid $moderateViolet;
+			}
+		}
+
+		&__credentials {
+			display: flex;
+			flex-direction: column;
+		}
+
+		&__name {
+			font-size: 1.45rem;
+		}
+
+		&__status {
+			color: $lightGray;
+		}
+	}
+
+	&--first {
+		color: $white;
+		background-color: $moderateViolet;
+		background-image: url(../images/bg-pattern-quotation.svg);
+		background-repeat: no-repeat;
+		background-position-x: right 2em;
+
+		.text {
+			color: $lightGray;
+		}
+	}
+
+	&--second {
+		color: $white;
+		background-color: $veryDarkGrayishBlue;
+
+		.text {
+			color: $lightGray;
+		}
+	}
+
+	&--third,
+	&--fifth {
+		background-color: $white;
+
+		.author__status {
+			color: $veryDarkGrayishBlue;
+		}
+
+		.text {
+			color: $veryDarkGrayishBlue;
+		}
+	}
+
+	&--fourth {
+		color: $white;
+		background-color: $veryDarkBlackishBlue;
+
+		.text {
+			color: $lightGray;
+		}
 	}
 }

@@ -14,6 +14,11 @@ body {
   font-family: "Barlow Semi Condensed", sans-serif;
   font-size: 1.3rem;
   font-weight: 500;
+  background-color: hsl(210, 46%, 95%);
+}
+
+h2 {
+  font-weight: 600;
 }
 
 .semantic-invisible {
@@ -22,14 +27,73 @@ body {
 
 .testimonials {
   display: grid;
+  justify-content: center;
   margin: 5em 2em;
+  gap: 2em;
 }
 
-.author {
-  display: flex;
-  align-items: center;
-}
-.author__credentials {
+.card {
   display: flex;
   flex-direction: column;
+  gap: 1.5em;
+  padding: 2em;
+  max-width: 350px;
+  border-radius: 8px;
+}
+.card .author {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1em;
+}
+.card .author__image img {
+  width: 3.2rem;
+  border: 2px solid hsl(0, 0%, 81%);
+  border-radius: 50%;
+}
+.card .author__image--fourth img {
+  border: 2px solid hsl(263, 55%, 52%);
+}
+.card .author__credentials {
+  display: flex;
+  flex-direction: column;
+}
+.card .author__name {
+  font-size: 1.45rem;
+}
+.card .author__status {
+  color: hsl(0, 0%, 81%);
+}
+.card--first {
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(263, 55%, 52%);
+  background-image: url(../images/bg-pattern-quotation.svg);
+  background-repeat: no-repeat;
+  background-position-x: right 2em;
+}
+.card--first .text {
+  color: hsl(0, 0%, 81%);
+}
+.card--second {
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(217, 19%, 35%);
+}
+.card--second .text {
+  color: hsl(0, 0%, 81%);
+}
+.card--third, .card--fifth {
+  background-color: hsl(0, 0%, 100%);
+}
+.card--third .author__status, .card--fifth .author__status {
+  color: hsl(217, 19%, 35%);
+}
+.card--third .text, .card--fifth .text {
+  color: hsl(217, 19%, 35%);
+}
+.card--fourth {
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(219, 29%, 14%);
+}
+.card--fourth .text {
+  color: hsl(0, 0%, 81%);
 }/*# sourceMappingURL=main.css.map */
