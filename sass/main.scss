@@ -92,7 +92,7 @@ h2 {
 		background-color: $moderateViolet;
 		background-image: url(../images/bg-pattern-quotation.svg);
 		background-repeat: no-repeat;
-		background-position-x: right 2em;
+		background-position-x: right 20px;
 
 		.text {
 			color: $lightGray;
@@ -140,6 +140,7 @@ h2 {
 
 			&--first {
 				grid-area: 1 / 1 / 1 / 3;
+                background-position-x: right 30px;
 			}
 			&--second {
 				grid-area: 1 / 3 / 1 / 4;
@@ -165,6 +166,10 @@ h2 {
 		grid-template-columns: repeat(4, 1fr);
 		grid-template-rows: repeat(2, 1fr);
 		.card {
+            &--first {
+                background-position-x: right 60px;
+			}
+
 			&--fifth {
 				grid-area: 1 / 4 / 3 / 5;
 			}
