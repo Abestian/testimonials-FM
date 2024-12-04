@@ -43,7 +43,8 @@ h2 {
 .card {
   display: flex;
   flex-direction: column;
-  gap: 1.5em;
+  justify-content: space-between;
+  gap: 0.25em;
   padding: 2em;
   max-width: 350px;
   border-radius: 8px;
@@ -71,6 +72,10 @@ h2 {
 }
 .card .author__status {
   color: hsl(0, 0%, 81%);
+}
+.card .title {
+  padding: 0.75em 0;
+  line-height: 2em;
 }
 .card--first {
   color: hsl(0, 0%, 100%);

@@ -48,7 +48,8 @@ h2 {
 .card {
 	display: flex;
 	flex-direction: column;
-	gap: 1.5em;
+	justify-content: space-between;
+	gap: 0.25em;
 	padding: 2em;
 	max-width: 350px;
 	border-radius: 8px;
@@ -85,6 +86,11 @@ h2 {
 		&__status {
 			color: $lightGray;
 		}
+	}
+
+	.title {
+		padding: .75em 0;
+		line-height: 2em;
 	}
 
 	&--first {
